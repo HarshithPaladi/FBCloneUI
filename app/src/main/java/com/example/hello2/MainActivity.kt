@@ -51,8 +51,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                    AppUI()
-//                    AppFbUI()
-                    BMICalculatorUI(name = "Harshith")
+                    AppFbUI()
+//                    BMICalculatorUI(name = "Harshith")
                 }
             }
         }
@@ -118,7 +118,7 @@ fun AppFbUI() {
             TextField(
                 value = firstName,
                 onValueChange = { firstName = it },
-                placeholder = { Text(text = "First Name") },
+                label = { Text(text = "First Name") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -126,7 +126,7 @@ fun AppFbUI() {
             TextField(
                 value = lastName,
                 onValueChange = { lastName = it },
-                placeholder = { Text(text = "Surname") },
+                label = { Text(text = "Surname") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -137,7 +137,7 @@ fun AppFbUI() {
             TextField(
                 value = socials,
                 onValueChange = { socials = it },
-                placeholder = { Text(text = "Mobile number or email address") },
+                label = { Text(text = "Mobile number or email address") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -147,7 +147,7 @@ fun AppFbUI() {
             TextField(
                 value = password,
                 onValueChange = { password = it },
-                placeholder = { Text(text = "New Password") },
+                label = { Text(text = "New Password") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -164,7 +164,7 @@ fun AppFbUI() {
             TextField(
                 value = date,
                 onValueChange = { date = it },
-                placeholder = { Text(text = "06") },
+                label = { Text(text = "Date") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -172,7 +172,7 @@ fun AppFbUI() {
             TextField(
                 value = month,
                 onValueChange = { month = it },
-                placeholder = { Text(text = "August") },
+                label = { Text(text = "Month") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)
@@ -180,7 +180,7 @@ fun AppFbUI() {
             TextField(
                 value = year,
                 onValueChange = { year = it },
-                placeholder = { Text(text = "2002") },
+                label = { Text(text = "Year") },
                 modifier = Modifier
                     .weight(1f)
                     .padding(4.dp)

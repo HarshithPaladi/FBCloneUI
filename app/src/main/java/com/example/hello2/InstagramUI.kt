@@ -204,8 +204,6 @@ fun Instagram_UI() {
                 .padding(start = 40.dp, end = 40.dp, top = 10.dp, bottom = 10.dp)
                 .fillMaxWidth()
                 .width(250.dp),
-            enabled = false
-
         ) {
             Text("Sign Up", fontWeight = FontWeight(800))
         }

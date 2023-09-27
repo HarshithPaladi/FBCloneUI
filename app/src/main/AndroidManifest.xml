@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Hello2"
         tools:targetApi="31">
         <activity
+            android:name=".InstagramUI"
+            android:exported="false"
+            android:label="@string/title_activity_instagram_ui"
+            android:theme="@style/Theme.Hello2" />
+        <activity
             android:name=".BMICalculator"
             android:exported="false"
             android:label="@string/title_activity_bmicalculator"

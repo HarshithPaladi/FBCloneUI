@@ -2,4 +2,5 @@
     <string name="app_name">Hello#2</string>
     <string name="title_activity_simple_calculator">SimpleCalculator</string>
     <string name="title_activity_bmicalculator">BMICalculator</string>
+    <string name="title_activity_instagram_ui">InstagramUI</string>
 </resources>

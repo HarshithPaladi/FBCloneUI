@@ -51,7 +51,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                    AppUI()
-                    AppFbUI()
+//                    AppFbUI()
+                    BMICalculatorUI(name = "Harshith")
                 }
             }
         }

@@ -3,9 +3,7 @@ package com.example.hello2
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -22,9 +20,9 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -70,9 +68,8 @@ fun Instagram_UI() {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
-            .padding(start = 20.dp, end = 20.dp, top = 10.dp, bottom = 10.dp)
-            .border(BorderStroke(1.dp, Color.DarkGray))
+//        modifier = Modifier
+//            .padding(start = 20.dp, end = 20.dp, top = 10.dp, bottom = 10.dp)
     ) {
         Image(
             painter = image, contentDescription = "Instagram Logo",
@@ -132,7 +129,7 @@ fun Instagram_UI() {
 
         Column(
             modifier = Modifier
-                .padding(5.dp)
+//                .padding(5.dp)
         ) {
             var socials by remember {
                 mutableStateOf("")
@@ -146,26 +143,26 @@ fun Instagram_UI() {
             var password by remember {
                 mutableStateOf("")
             }
-            TextField(
+            OutlinedTextField(
                 value = socials,
                 onValueChange = { socials = it },
                 label = { Text(text = "Mobile Number or Email") },
                 modifier = Modifier.padding(start = 5.dp, end = 5.dp, top = 10.dp, bottom = 5.dp)
             )
-            TextField(
+            OutlinedTextField(
                 value = fullName,
                 onValueChange = { fullName = it },
                 label = { Text(text = "Full Name") },
                 modifier = Modifier.padding(5.dp)
 
             )
-            TextField(
+            OutlinedTextField(
                 value = userName,
                 onValueChange = { userName = it },
                 label = { Text(text = "Userame") },
                 modifier = Modifier.padding(5.dp)
             )
-            TextField(
+            OutlinedTextField(
                 value = password,
                 onValueChange = { password = it },
                 label = { Text(text = "Password") },
